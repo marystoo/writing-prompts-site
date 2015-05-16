@@ -14,6 +14,16 @@
   -moz-box-sizing: border-box;
 }
 
+body { 
+	font-size: 100%; 
+	font-family: 'Arimo', Verdana, Arial, Sans-Serif; 
+	font-style: normal;
+   	font-weight: 400;
+   	font-color: #444;
+    background-image: url("../images/confectionary.jpg");
+    background-repeat: repeat;
+}
+
 .container {
 	width: 960px;
 	margin: 0 auto;
@@ -38,10 +48,6 @@ h3{
 
 p {
 	margin-bottom: 2%;
-	font-family: 'Arimo', sans-serif;
-	font-style: normal;
-   	font-weight: 400;
-   	font-color: #444;;
 }
 
 img {
@@ -56,91 +62,89 @@ header{
 	font-style: normal;
 	font-weight: 400;
 	padding-top: 20px;
+	border-bottom: 1px dotted #c9c3ba;
+}
+
+#logo {
+	height: 100px;
 }
 
 
 header h1{
-	 font-size: 64px;
+	 font-size: 4em;
 	 line-height: 73px;
 	 color: #004248;
 	 
 }
 
 header h2{
-	font-size: 1.2em;
-	line-height: 1.21em;
+	font-size: 2em;
+	line-height: 2.15em;
 	color: #008895;
 	position: relative;
-	top: -10px;
-	left: 79px;
+	top: -25px;
+	left: 59px;
 	z-index: 1;
+	
+}
+
+header.row {
+	margin-bottom: 0;
 }
 
 /*///NAV BAR///*/
 
-/*#nav-bar {
+#nav_bar {
   position: relative;
-  top: 0;
-  left: 0;
+  top: 45px;
+  left: 150px;
   z-index: 2;
   text-align: center;
 }
 
-#nav-bar a.selected {
-	background: #008895;
-	color: white;
-}
-
-#navbar nav a {
-  display: inline-block;
-  width: 16.6666667%;
-  margin: 0;
-  padding: 22px 0;
-  font-family: Lobster, cursive;
-  text-transform: uppercase;
-  text-align: center;
-  border-right: 1px solid #ccc;
-  text-decoration: none;
-}*/
-
-
 /*////TABS////*/
 
-body { 
-	font-size: 80%; 
-	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; 
-	}
+
 ul#tabs { 
 	list-style-type: none; 
 	margin: 30px 0 0 0; 
 	padding: 0 0 0.3em 0; 
-	}
+
+}
+
 ul#tabs li { 
 	display: inline; 
-	}
+}
+
 ul#tabs li a { 
-	color: #42454a; 
-	background-color: #dedbde; 
-	border: 1px solid #c9c3ba; 
-	border-bottom: none; 
+	color: #42454a;  
+	border: 1px dotted #c9c3ba; 
+	border-bottom: none;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px; 
 	padding: 0.3em; 
 	text-decoration: none; 
-	}
+	background-color: #f1f0ee;
+}
+
 ul#tabs li a:hover { 
-	background-color: #f1f0ee; 
-	}
+	background-color: ; 
+}
+
 ul#tabs li a.selected { 
 	color: #000; 
-	background-color: #f1f0ee; 
+	background-color: #fff; 
 	font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; 
-	}
-div.tabContent { 
-	border: 1px solid #c9c3ba; 
-	padding: 0.5em; background-color: #f1f0ee; 
-	}
+}
+
+div.tabContent {  
+	padding: 0.5em; 
+	background: white; 
+}
+
 div.tabContent.hide { 
 	display: none; 
-	}
+}
 
 
 
@@ -149,14 +153,18 @@ div.tabContent.hide {
 
 
 #main_section {
-	border: 2px solid #ccc;
-	padding: 15px;
+	padding: 0 15px;
 }
 
 .prompt {
 	border: 1px solid #ccc;
 	padding: 10px;
 	margin-bottom: 20px;
+}
+
+h2.genre {
+	margin-left: 15px;
+	font-size: 2em;
 }
 
 /*//////Column Structure//////*/

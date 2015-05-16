@@ -1,6 +1,7 @@
+ 	var tabLinks = new Array();
+    var contentDivs = new Array();
 
-
- function init() {
+    function init() {
 
       // Grab the tab links and content divs from the page
       var tabListItems = document.getElementById('tabs').childNodes;
@@ -33,7 +34,6 @@
       }
     }
 
-
     function showTab() {
       var selectedId = getHash( this.getAttribute('href') );
 
@@ -52,3 +52,19 @@
       // Stop the browser following the link
       return false;
     }
+
+    function getFirstChildWithTagName( element, tagName ) {
+      for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+      }
+    }
+
+    function getHash( url ) {
+      var hashPos = url.lastIndexOf ( '#' );
+      return url.substring( hashPos + 1 );
+    }
+
+
+
+//Tutorial found: http://www.elated.com/articles/javascript-tabs/
+    
