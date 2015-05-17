@@ -8,6 +8,8 @@
 	<title>NanoLamb Writing Prompts -- Jumpstart Your Creative Mind</title>
 </head>
 <body onload="init()">
+
+
 	<div class="container">
 		<header class="row">
 			<div id="logo" class="col-3">
@@ -24,14 +26,19 @@
 			      <li><a href="#scifi">SciFi/Fantasy</a></li>
 			    </ul>
 		    </div>
+			    
 			
 		</header>
+
+
+
+		
 		<div id="main" class="row">
 			<div class="tabContent col-12" id="about">
 			  <h2 class="genre">Home</h2>
 			  	<div class="row">
-					<div class="main_section, col-9">
-					<h2>Top Rated Prompts</h2>
+					<div class="main_section, col-7">
+					<h2 class="sect_head">Newest Prompts</h2>
 						<div class="prompt">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
 						</div>
@@ -41,22 +48,36 @@
 						<div class="prompt">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
 						</div>
-					</div><!--Main Section !-->
-					<div class="account_info, col-3">
-						<h2>Account Info</h2>
+					</div><!-- Main Section  -->
+					<div class="account_info, col-5">
+						<h2 class="sect_head">Submit a Prompt</h2>
 						<div class="login">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
+							<form action="#" method="post">
+
+						          <label for="handle"><h3>Author</h3></label>
+						          <!-- <span id="name-error" class="error">Please enter a name</span> -->
+						          <input type="text" id="handle" name="handle" placeholder="Anonymous">
+						          
+						          <label for="message"><h3>Prompt</h3></label>
+						          <!-- <span id="message-error" class="error">Can not be left blank.</span> -->
+						          <textarea id="message" name="message" rows="8"></textarea>
+
+						          <input type="text" name="verify" class="verify-box" placeholder="verify you're human">
+						          <img class="verify-img" src="verificationimage.php?<?php echo rand(0,9999) ?>" alt="verification image">
+						          
+						          <input type="submit" value="send">
+						        </form>
 						</div>
 
 					</div>
-				</div> <!-- Row -->
-			</div> <!-- About tab -->
+				</div> <!-- Row --> 
+			</div> <!--  About tab -->
 
 			<div class="tabContent" id="mystery">
 			  <h2 class="genre">Mystery</h2>
 			  	<div class="row">
-					<div class="main_section, col-9">
-					<h2>Top Rated Prompts</h2>
+					<div class="main_section, col-7">
+					<h2 class="sect_head">Newest Prompts</h2>
 						<div class="prompt">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
 						</div>
@@ -66,22 +87,36 @@
 						<div class="prompt">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
 						</div>
-					</div><!--Main Section !-->
-					<div class="account_info, col-3">
-						<h2>Account Info</h2>
+					</div><!-- Main Section ! -->
+					<div class="account_info, col-5">
+						<h2 class="sect_head">Submit a Prompt</h2>
 						<div class="login">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
+							<form action="#" method="post">
+
+						          <label for="handle"><h3>Author</h3></label>
+						          <!-- <span id="name-error" class="error">Please enter a name</span> -->
+						          <input type="text" id="handle" name="handle" placeholder="Anonymous">
+						          
+						          <label for="message"><h3>Prompt</h3></label>
+						          <!-- <span id="message-error" class="error">Can not be left blank.</span> -->
+						          <textarea id="message" name="message" rows="8"></textarea>
+
+						          <input type="text" name="verify" class="verify-box" placeholder="verify you're human">
+						          <img class="verify-img" src="verificationimage.php?<?php echo rand(0,9999) ?>" alt="verification image">
+						          
+						          <input type="submit" value="send">
+						        </form>
 						</div>
 
 					</div>
-				</div> <!-- Row -->
-			</div> <!-- Mystery tab -->
+				</div> <!-- Row  -->
+			</div>  <!-- Mystery tab -->
 
 			<div class="tabContent" id="comedy">
 			  <h2 class="genre">Comedy</h2>
 			  	<div class="row">
-					<div class="main_section, col-9">
-					<h2>Top Rated Prompts</h2>
+					<div class="main_section, col-7">
+					<h2 class="sect_head">Newest Prompts</h2>
 						<div class="prompt">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
 						</div>
@@ -91,22 +126,36 @@
 						<div class="prompt">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
 						</div>
-					</div><!--Main Section !-->
-					<div class="account_info, col-3">
-						<h2>Account Info</h2>
+					</div><!-- Main Section  -->
+					<div class="account_info, col-5">
+						<h2 class="sect_head">Submit a Prompt</h2>
 						<div class="login">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
+							<form action="#" method="post">
+
+						          <label for="handle"><h3>Author</h3></label>
+						          <!-- <span id="name-error" class="error">Please enter a name</span> -->
+						          <input type="text" id="handle" name="handle" placeholder="Anonymous">
+						          
+						          <label for="message"><h3>Prompt</h3></label>
+						          <!-- <span id="message-error" class="error">Can not be left blank.</span> -->
+						          <textarea id="message" name="message" rows="8"></textarea>
+
+						          <input type="text" name="verify" class="verify-box" placeholder="verify you're human">
+						          <img class="verify-img" src="verificationimage.php?<?php echo rand(0,9999) ?>" alt="verification image">
+						          
+						          <input type="submit" value="send">
+						        </form>
 						</div>
 
 					</div>
-				</div> <!-- Row -->
-			</div> <!-- Comedy tab -->
+				</div> <!-- Row  -->
+			</div> <!--  Comedy tab -->
 
 			<div class="tabContent" id="romance">
 			  <h2 class="genre">Romance</h2>
 			  	<div class="row">
-					<div class="main_section, col-9">
-					<h2>Top Rated Prompts</h2>
+					<div class="main_section, col-7">
+					<h2 class="sect_head">Newest Prompts</h2>
 						<div class="prompt">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
 						</div>
@@ -116,22 +165,36 @@
 						<div class="prompt">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
 						</div>
-					</div><!--Main Section !-->
-					<div class="account_info, col-3">
-						<h2>Account Info</h2>
+					</div><!-- Main Section ! -->
+					<div class="account_info, col-5">
+						<h2 class="sect_head">Submit a Prompt</h2>
 						<div class="login">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
+							<form action="#" method="post">
+
+						          <label for="handle"><h3>Author</h3></label>
+						          <!-- <span id="name-error" class="error">Please enter a name</span> -->
+						          <input type="text" id="handle" name="handle" placeholder="Anonymous">
+						          
+						          <label for="message"><h3>Prompt</h3></label>
+						          <!-- <span id="message-error" class="error">Can not be left blank.</span> -->
+						          <textarea id="message" name="message" rows="8"></textarea>
+
+						          <input type="text" name="verify" class="verify-box" placeholder="verify you're human">
+						          <img class="verify-img" src="verificationimage.php?<?php echo rand(0,9999) ?>" alt="verification image">
+						          
+						          <input type="submit" value="send">
+						        </form>
 						</div>
 
 					</div>
-				</div> <!-- Row -->
-			</div> <!-- Romance tab -->
+				</div> <!-- Row  -->
+			</div>  <!-- Romance tab -->
 
 			<div class="tabContent" id="scifi">
 			  <h2 class="genre">SciFi/Fantansy</h2>
 			  	<div class="row">
-					<div class="main_section, col-9">
-					<h2>Top Rated Prompts</h2>
+					<div class="main_section, col-7">
+					<h2 class="sect_head">Newest Prompts</h2>
 						<div class="prompt">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
 						</div>
@@ -141,22 +204,36 @@
 						<div class="prompt">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
 						</div>
-					</div><!--Main Section !-->
-					<div class="account_info, col-3">
-						<h2>Account Info</h2>
+					</div><!-- Main Section ! -->
+					<div class="account_info, col-5">
+						<h2 class="sect_head">Submit a Prompt</h2>
 						<div class="login">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
+							<form action="#" method="post">
+
+						          <label for="handle"><h3>Author</h3></label>
+						          <!-- <span id="name-error" class="error">Please enter a name</span> -->
+						          <input type="text" id="handle" name="handle" placeholder="Anonymous">
+						          
+						          <label for="message"><h3>Prompt</h3></label>
+						          <!-- <span id="message-error" class="error">Can not be left blank.</span> -->
+						          <textarea id="message" name="message" rows="8"></textarea>
+
+						          <input type="text" name="verify" class="verify-box" placeholder="verify you're human">
+						          <img class="verify-img" src="verificationimage.php?<?php echo rand(0,9999) ?>" alt="verification image">
+						          
+						          <input type="submit" value="send">
+						        </form>
 						</div>
 
 					</div>
-				</div> <!-- Row -->
-			</div> <!-- SciFi tab -->
-
+				</div> <!-- Row  -->
+			</div> <!--  SciFi tab
+ -->
 			<div class="tabContent" id="horror">
 			  <h2 class="genre">Horror</h2>
 			  	<div class="row">
-					<div class="main_section, col-9">
-					<h2>Top Rated Prompts</h2>
+					<div class="main_section, col-7">
+					<h2 class="sect_head">Newest Prompts</h2>
 						<div class="prompt">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
 						</div>
@@ -166,22 +243,42 @@
 						<div class="prompt">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
 						</div>
-					</div><!--Main Section !-->
-					<div class="account_info, col-3">
-						<h2>Account Info</h2>
+					</div><!-- Main Section ! -->
+					<div class="account_info, col-5">
+						<h2 class="sect_head">Submit a Prompt</h2>
 						<div class="login">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae error voluptatibus libero dignissimos vero consequuntur provident magnam, nam reiciendis ea perspiciatis doloremque odit obcaecati nostrum ab, ut. Molestias, delectus.</p>
+							<form action="#" method="post">
+
+						          <label for="handle"><h3>Author</h3></label>
+						          <!-- <span id="name-error" class="error">Please enter a name</span> -->
+						          <input type="text" id="handle" name="handle" placeholder="Anonymous">
+						          
+						          <label for="message"><h3>Prompt</h3></label>
+						          <!-- <span id="message-error" class="error">Can not be left blank.</span> -->
+						          <textarea id="message" name="message" rows="8"></textarea>
+
+						          <input type="text" name="verify" class="verify-box" placeholder="verify you're human">
+						          <img class="verify-img" src="verificationimage.php?<?php echo rand(0,9999) ?>" alt="verification image">
+						          
+						          <input type="submit" value="send">
+						        </form>
 						</div>
 
 					</div>
-				</div> <!-- Row -->
+				</div> <!-- Row --> 
 			</div> <!-- Horror tab -->
-		</div> <!-- MAIN -->
+		</div> <!-- MAIN
+ -->
+		
 
 		
 
-	</div> <!-- Container -->
+	</div> <!--  Container -->
+	<footer>
+	      &copy; 2015 NanoLamb Designs. All Rights Reserved.
+	    </footer>
 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script src="js/tab_content.js"></script>
 	<script src="js/main.js"></script>
 </body>

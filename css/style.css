@@ -43,7 +43,7 @@ h3{
 	font-weight: 400;
 	font-size: 1em;
 	line-height: 1.1em;
-	color: #D96248;
+	color: #403F37;
 }
 
 p {
@@ -51,7 +51,7 @@ p {
 }
 
 img {
-	border: 5px solid #004248;
+	border: 2px solid #004248;
 	height: 100%;
 }
 
@@ -63,7 +63,9 @@ header{
 	font-weight: 400;
 	padding-top: 20px;
 	border-bottom: 1px dotted #c9c3ba;
+	z-index: 2;
 }
+
 
 #logo {
 	height: 100px;
@@ -82,8 +84,8 @@ header{
 	line-height: 2.15em;
 	color: #008895;
 	position: relative;
-	top: -25px;
-	left: 59px;
+	top: -30px;
+	left: 70px;
 	z-index: 1;
 	
 }
@@ -149,10 +151,13 @@ div.tabContent.hide {
 
 /*///MAIN FEATURES///*/
 
+#main {
+	padding-top: 15px;
+	background: #fff;
+}
 
-
-.main_section {
-	padding: 0 15px;
+.sect_head {
+	margin: 0 0 15px 15px;
 }
 
 .prompt {
@@ -168,9 +173,79 @@ div.tabContent.hide {
 }
 
 h2.genre {
-	margin-left: 15px;
+	margin: 0 0 15px 15px;
 	font-size: 2em;
+	color: #004248;
 }
+
+/*///FORM///*/
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0 3px 5px #ccc;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  margin-top: 5px;
+  width: 100%;
+  background: #004248;
+  color: white;
+  border-radius: 25px;
+  border: 0;
+}
+
+input[type="submit"]:hover {
+  background: #555;
+}
+
+input.error, textarea.error {
+  border: 1px solid red;
+}
+
+span.error {
+  display: none;
+  color: red;
+}
+
+input.verify-box {
+  display: inline-block;
+  width: 78%;
+  margin-right: 2%;
+}
+
+img.verify-img {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  vertical-align: bottom;
+  margin-bottom: 3px;
+}
+
+/*///FOOTER///*/
+
+footer {
+  text-align: center;
+  color: #fff; 
+  font-size: 0.75em;
+  padding: 10px;
+  background: #42454a;
+  border-top: 1px dotted #c9c3ba; 
+  position: fixed;
+  bottom: 0; 
+  width: 100%;
+}
+
+/*///MEDIA///*/
+
+img, video, audio, iframe, table, form {
+  width: 100%; /* IE */
+  max-width: 100%; /* FF, Safari, Chrome */
+}
+
 
 /*//////Column Structure//////*/
 

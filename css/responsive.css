@@ -8,14 +8,22 @@
 
 @media only screen and (max-width: 1060px) {
 
+  body{
+    font-size: 85%;
+  }
 
-  #logo h1 {
+  #nav_bar {
+    top: 48px;
+  }
+
+
+/*  #logo h1 {
     font-size: 3em;
   }
 
   #logo h2 {
     font-size: 1.8em;
-  }
+  }*/
 
 }
 
@@ -32,32 +40,37 @@
     text-align: left;
   }
 
-  h2.genre {
-    margin-left: 0;
-  }
 
-  #main .col-9 {
+ /* #main .col-9 {
   width: 66%;
   }
 
   #main .col-3{
   width: 32%;
-  }
+  }*/
 
 }
 
 @media only screen and (max-width: 900px) {
 
-  #logo h1 {
+  body {
+    font-size: 75%;
+  } 
+
+  #logo{
+    height: 75px;
+  }
+
+ /* #logo h1 {
     font-size: 2em;
   }
 
   #logo h2 {
     font-size: 1.5em;
     left: 25px;
-  }
+  }*/
 
- #main .col-3, #main .col-9 {
+ #main .col-5, #main .col-7 {
     width: 100%;
     margin-left: 0;
     float: none;
@@ -67,10 +80,11 @@
 
 }
 
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 375px) {
 
   .container{
     min-width: 475px;
+    padding: 0 15px;
   }  
 
 }
