@@ -1,0 +1,81 @@
+@media only screen and (max-width: 1108px) {
+
+  .container {
+    width: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 1060px) {
+
+
+  #logo h1 {
+    font-size: 3em;
+  }
+
+  #logo h2 {
+    font-size: 1.8em;
+  }
+
+}
+
+@media only screen and (max-width: 920px) {
+
+  #logo.col-3, #nav_bar.col-9 {
+    width: 100%;
+    margin-left: 0;
+    float: none;
+  }
+
+  #nav_bar{
+    top:0;
+    text-align: left;
+  }
+
+  h2.genre {
+    margin-left: 0;
+  }
+
+  #main .col-9 {
+  width: 66%;
+  }
+
+  #main .col-3{
+  width: 32%;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  #logo h1 {
+    font-size: 2em;
+  }
+
+  #logo h2 {
+    font-size: 1.5em;
+    left: 25px;
+  }
+
+ #main .col-3, #main .col-9 {
+    width: 100%;
+    margin-left: 0;
+    float: none;
+  }
+
+  
+
+}
+
+@media only screen and (max-width: 475px) {
+
+  .container{
+    min-width: 475px;
+  }  
+
+}
+
+
+
+
+

@@ -70,14 +70,14 @@ header{
 }
 
 
-header h1{
+#logo h1{
 	 font-size: 4em;
 	 line-height: 73px;
 	 color: #004248;
 	 
 }
 
-header h2{
+#logo h2{
 	font-size: 2em;
 	line-height: 2.15em;
 	color: #008895;
@@ -97,9 +97,8 @@ header.row {
 #nav_bar {
   position: relative;
   top: 45px;
-  left: 150px;
   z-index: 2;
-  text-align: center;
+  text-align: right;
 }
 
 /*////TABS////*/
@@ -152,14 +151,20 @@ div.tabContent.hide {
 
 
 
-#main_section {
+.main_section {
 	padding: 0 15px;
 }
 
 .prompt {
-	border: 1px solid #ccc;
+	border-top: 1px dotted #ccc;
 	padding: 10px;
 	margin-bottom: 20px;
+}
+
+.login {
+	border: 1px dotted #ccc;
+	padding: 10px;
+	margin: 0 20px 0 0;
 }
 
 h2.genre {
